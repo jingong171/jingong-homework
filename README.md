@@ -4,16 +4,16 @@ Python作业提交地点
 授课老师：信息学院 吕子钰 cufecsziyulu@163.com
 
 **第一次Python作业**
-1.计算体重系数
-2.累加1+2+3+...+50
-3.水仙花数
-4.一百以内的素数
+   1.计算体重系数<br>
+   2.累加1+2+3+...+50<br>
+   3.水仙花数<br>
+   4.一百以内的素数<br>
 
 **python课件的百度云链接:[https://pan.baidu.com/s/1wmu31k_N11eyd4ik49skEw](https://pan.baidu.com/s/1wmu31k_N11eyd4ik49skEw"悬浮显示")**
 
 **命名规则：第一次作业-金工17-1-学号-姓名**
 
-在github上提交C++作业会非常简单，学会用github可能需要花费你30min+，但是懂得操作github之后，将会极大的提高团队协作的效率。<br>
+在github上提交作业会非常简单，学会用github可能需要花费你30min+，但是懂得操作github之后，将会极大的提高团队协作的效率。<br>
 
 
 ## 环境准备
@@ -24,7 +24,7 @@ Python作业提交地点
 
 github官网：[https://github.com/](https://github.com/ "悬停显示") 
 <br>
-2.**把自己的github帐号发到班群里，** lkc会邀请你作为协作者并开放权限。<br>
+2.**把自己的github帐号发到班群里， Lkc会邀请你作为协作者并开放权限。**<br><br>
 *协作者权限意味着更大的自由度，与更普遍使用的fork&pull request方法相比，协作者的权限更大。~~关于fork&pull request：[https://services.github.com/on-demand/github-desktop/pull-request-github-desktop](https://services.github.com/on-demand/github-desktop/pull-request-github-desktop "悬停显示")~~*
 
 3.下载GitHub Desktop（macOS,windows分别下载）
@@ -51,6 +51,7 @@ jingong-homework是jingong171下的一个日后用来存放大家作业的仓库
 3) 打开github Desktop，写好Summary,Description,点击Commit to master进行提交<br>
 <br>
 4) 点击Push origin<br>
-   打开github页面，可见homework-space仓库已经push成功.<br>
-   <br>
+   打开github页面，可见jingong-homework仓库已经push成功.<br>
+   **注意，如果显示没有权限，请把github帐号发给Lkc以邀请你成为协作者**<br>
+   
 5) cheers and have a beer!<br>
