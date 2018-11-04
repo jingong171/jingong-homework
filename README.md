@@ -3,9 +3,13 @@ Python作业提交地点
 =======================
 授课老师：信息学院 吕子钰 cufecsziyulu@163.com
 
-**文件夹命名：学号-姓名-第二次作业-金工17-1**<br>
-**上交.py，下次上课前收，逾时将会被登记.ddl:10月9号19：00PM**<br>
-**python课件的百度云链接（已更新）:[https://pan.baidu.com/s/1ZxsK9NSFQcGDYNoQO9bCOw](https://pan.baidu.com/s/1ZxsK9NSFQcGDYNoQO9bCOw"悬浮显示")**
+**文件夹命名：学号-第二次作业-金工17-1-姓名**<br>
+**上交.py，周一晚十点前收，逾时将会被登记.ddl:11月05日22：00PM**<br>
+**python课件的百度云链接（已更新）:[https://pan.baidu.com/s/1tt70e5iORAOI3Q8OUpixgg](https://pan.baidu.com/s/1tt70e5iORAOI3Q8OUpixgg"悬浮显示")**
+
+**第三次Python作业**<br>
+  1.打印万年历
+  
 
 **第二次python作业**<br>
   1.用循环语句计算并输出32+62+92+…+272+302(平方!）的值。<br>
