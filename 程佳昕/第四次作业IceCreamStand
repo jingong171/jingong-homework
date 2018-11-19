@@ -1,0 +1,10 @@
+from Restaurant import Restaurant
+class IceCreamStand(Restaurant):
+    def _inint_(self,restaurant_name,cuisine_type,number_served=0,flavors=['chocolate','strawberry','yogurt']):
+"""继承冰淇淋种类"""
+        super()._init_(restaurant_name,cuisine_type,number_served=0)
+        self.flavors=flavors
+    def show_flavors(self):
+"""打印冰淇淋口味"""
+        print("冰淇淋口味有：",self.flavors)
+my_res.show_flavors()
