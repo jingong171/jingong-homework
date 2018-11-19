@@ -1,0 +1,18 @@
+class Restaurant():
+    def __init__(self,restaurant_name,cuisine_type,number_served):
+        self.restaurant_name = str(restaurant_name)
+        self.cuisine_type = str(cuisine_type)
+        self.number_served = number_served
+"""描述饭店名称"""
+    def describe_restaurant(self):
+        print("饭店名称是："+" "+self.restaurant_name+".")
+        print("其提供的菜品有： "+" "+self.cuisine_type +".")
+"""设置服务人数"""
+    def set_number_served(self,a):
+        self.number_served = int(a)
+        print("服务员人数为："+str(a)+".")
+    def increment_number_served(self,b):
+        self.number_served += int(b)
+        print("服务员人数为： "+str(b)+".")
+
+                

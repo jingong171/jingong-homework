@@ -1,0 +1,60 @@
+'''判断输入的年份n是不是闰年
+   若n年份为闰年 则leap_year=1 否则leap_year=0'''
+def leapYear(n):
+    if n % 4 == 0 and n % 100 != 0 or n % 400 == 0:
+        return True
+    else:
+        return False
+
+'''判断输入月份所对应的天数'''
+def monthDays(n,m):
+    if m==1 or m==3 or m==5 or m==7 or m==8 or m==10 or m==12:
+        return 31
+    elif m==4 or m==6 or m==9 or m==11:
+        return 30
+    elif leapYear(n)==1:
+        return 29
+    else:
+        return 28
+'''计算从1990年开始有多少天'''
+def totalDays(n,m):
+    sumdays=0
+    for y in range(1990,n-1):
+        if leapYear(n):
+            sumdays=sumdays+366
+        else:
+            sumdays=sumdays+365
+    for mdays in range(1,m):
+        sumdays=sumdays+monthDays(n,mdays)
+    return sumdays
+'''所给年份和月份对应下第一天是星期几'''
+def start_day(n,m):
+    return 1+totalDays(n,m)%7
+month_name={1:'January',2:'Feburary',3:'March',4:'April',5:'May',6:'June',7:'July',8:'August',9:'September',10:'October',11:'November',12:'December'}
+def monthName(m):
+    return month_name[m]
+def monthTitle(n,m):
+    print('      ',monthName(m),'    ',n)
+    print('Sun  Mon  Tue  Wed  Thu  Fri  Sat  ')
+def geshi(n,m):
+    i=start_day(n,m)
+    if i==7:
+        print('  ')
+    else:
+        print('  ')
+        while(i!=0):
+            print('\t'*i)
+            i=i-1
+    p=1
+    while(p<=monthDays(n,m)):
+        w=((totalDays(n,m)+p)-1)%7
+        if w==6:
+            print("%d"%p)
+        else:
+            print(p)
+            print('\t')
+        p=p+1
+n=int(input("请输入年份"))
+m=int(input("请输入月份"))
+print(monthTitle(n,m))
+print(geshi(n,m))
