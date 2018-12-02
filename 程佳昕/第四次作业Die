@@ -1,0 +1,15 @@
+"""引入模块"""
+from random import randint
+"""创建一个Die类"""
+class Die():
+    def _init_(self):
+"""初始化骰子面数为6"""
+        self.sides=6
+"""随机投骰子得出一个数并打印1到这个数间的任意的数"""
+    def roll_num(self):
+        n=randint(1,6)
+        for i in range(1,n):
+            print(str(i))
+die=Die()
+for i in range(0,10):
+    die.roll_num()
