@@ -7,4 +7,4 @@ try:
     print(objcat.read()),
     print(objdog.read()),
 except FileNotFoundError:
-    print("FileNotFoundError:找不到文件")
+    print("FileNotFoundError:找不到文件")#做一个友好的声明

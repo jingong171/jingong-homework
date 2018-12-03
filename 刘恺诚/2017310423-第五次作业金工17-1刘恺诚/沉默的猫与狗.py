@@ -7,4 +7,4 @@ try:
     print(objcat.read()),
     print(objdog.read()),
 except FileNotFoundError:
-    pass
+    pass#什么都不做，沉默不语
