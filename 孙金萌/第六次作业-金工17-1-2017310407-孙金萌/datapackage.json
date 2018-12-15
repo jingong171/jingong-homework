@@ -1,0 +1,182 @@
+{
+  "bytes": 2021623,
+  "datahub": {
+    "created": "2017-11-08T22:07:43.161702",
+    "findability": "published",
+    "flowid": "core/gdp/9",
+    "modified": "2018-03-15T06:19:35.762157",
+    "owner": "core",
+    "ownerid": "core"
+  },
+  "description": "Country, regional and world GDP in current US Dollars ($). Regional means collections of countries e.g. Europe & Central Asia. Data is sourced from the World Bank and turned into a standard normalized CSV.",
+  "hash": "1a0fb222c73584b9c62ee6ebf89e45c4",
+  "id": "core/gdp",
+  "image": "http://assets.okfn.org/p/opendatahandbook/img/data-wrench.png",
+  "keywords": [
+    "GDP",
+    "World",
+    "Gross Domestic Product",
+    "Time series"
+  ],
+  "last_updated": "2018-01-19",
+  "licenses": [
+    {
+      "name": "ODC-PDDL-1.0",
+      "path": "http://opendatacommons.org/licenses/pddl/",
+      "title": "Open Data Commons Public Domain Dedication and License v1.0"
+    }
+  ],
+  "name": "gdp",
+  "resources": [
+    {
+      "bytes": 454342,
+      "datahub": {
+        "type": "original"
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/d23467a8c0db40a04e73a01ea019cbf3.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "name": "gdp_original",
+      "path": "archive/gdp.csv",
+      "profile": "data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "Country Name",
+            "type": "string"
+          },
+          {
+            "name": "Country Code",
+            "type": "string"
+          },
+          {
+            "name": "Year",
+            "type": "year"
+          },
+          {
+            "description": "GDP in current USD",
+            "name": "Value",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "bytes": 591,
+      "datahub": {
+        "type": "derived/report"
+      },
+      "description": "Validation report for tabular data",
+      "dpp:streamedFrom": "/tmp/tmp05oksc9z/core/gdp/validation_report/data/8500533ca81a0cd8993867c3bf11c30e/validation_report.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "8500533ca81a0cd8993867c3bf11c30e",
+      "name": "validation_report",
+      "path": "data/validation_report.json",
+      "profile": "data-resource"
+    },
+    {
+      "bytes": 454342,
+      "datahub": {
+        "derivedFrom": [
+          "gdp"
+        ],
+        "type": "derived/csv"
+      },
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmp05oksc9z/core/gdp/gdp_csv/data/0048bc8f6228d0393d41cac4b663b90f/gdp_csv.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "0048bc8f6228d0393d41cac4b663b90f",
+      "name": "gdp_csv",
+      "path": "data/gdp_csv.csv",
+      "profile": "data-resource",
+      "rowcount": 11507,
+      "schema": {
+        "fields": [
+          {
+            "name": "Country Name",
+            "type": "string"
+          },
+          {
+            "name": "Country Code",
+            "type": "string"
+          },
+          {
+            "name": "Year",
+            "type": "year"
+          },
+          {
+            "decimalChar": ".",
+            "description": "GDP in current USD",
+            "groupChar": "",
+            "name": "Value",
+            "type": "number"
+          }
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 1111120,
+      "datahub": {
+        "derivedFrom": [
+          "gdp"
+        ],
+        "type": "derived/json"
+      },
+      "dpp:streamedFrom": "/tmp/tmp05oksc9z/core/gdp/gdp_json/data/1a2503aa36368933be8f9a96e1dc16de/gdp_json.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "1a2503aa36368933be8f9a96e1dc16de",
+      "name": "gdp_json",
+      "path": "data/gdp_json.json",
+      "profile": "data-resource",
+      "rowcount": 11507,
+      "schema": {
+        "fields": [
+          {
+            "name": "Country Name",
+            "type": "string"
+          },
+          {
+            "name": "Country Code",
+            "type": "string"
+          },
+          {
+            "name": "Year",
+            "type": "year"
+          },
+          {
+            "description": "GDP in current USD",
+            "name": "Value",
+            "type": "number"
+          }
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 1228,
+      "dpp:streamedFrom": "/tmp/tmp1i9dnsag/README.md",
+      "format": "md",
+      "name": "readme",
+      "path": "README.md"
+    }
+  ],
+  "sources": [
+    {
+      "name": "World Bank and OECD",
+      "path": "http://data.worldbank.org/indicator/NY.GDP.MKTP.CD",
+      "title": "World Bank and OECD"
+    }
+  ],
+  "title": "Country, Regional and World GDP (Gross Domestic Product)",
+  "version": "2017"
+}
